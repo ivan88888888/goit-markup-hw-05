@@ -116,6 +116,7 @@ header {
     position: absolute;
     left: 0px;
     bottom: 0px;
+    bottom: -1px;
 }
 
 .header-item:last-child {
@@ -127,7 +128,7 @@ header {
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.142;
     letter-spacing: 0.02em;
 
     display: block;
@@ -373,6 +374,9 @@ display: flex;
 .work-item {
 }
 
+.work-link {
+}
+
 .work-img {
     margin-bottom: 0px;
 }
@@ -381,22 +385,24 @@ display: flex;
     margin-right: 30px;
 }
 
+/* div */
 .work-conteiner-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
 
     width: 100%;
-    height: ;
+    height: 70px;
 
     background: rgba(47, 48, 58, 0.8);
 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
     position: relative;
-    bottom: 0;
+    bottom: 0px;
 }
 
-
+/* h3 */
 .work-box {
     font-family: Roboto;
     font-weight: 700;
