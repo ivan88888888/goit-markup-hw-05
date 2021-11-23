@@ -462,28 +462,30 @@ padding-bottom: 30px;
     margin-right: 10px;
 }
 
-.social-link:hover {
-    background-color: var(--accent-text-color);
-    color: var(--white-text-color);
-}
-
 .social-link {
     fill: currentColor;
 }
 
 .social-link {
-    margin: 0px;
     padding: 0px;
     margin: 0px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     display: inline-block;
-    color: #AFB1B8;
+    fill: #AFB1B8;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+.social-link:hover,
+.social-link:focus {
+    fill: var(--white-text-color);
+    background-color: var(--accent-text-color);
 }
 
 .social-svg {
