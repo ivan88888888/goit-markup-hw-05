@@ -361,6 +361,38 @@ display: flex;
     margin-right: 30px;
 }
 
+.work-conteiner-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    width: 370px;
+
+    background: rgba(47, 48, 58, 0.8);
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    position: relative;
+    top: -70px;
+}
+
+
+.work-box {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.144;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-text-color);
+
+    margin: 0px;
+}
 
 
 
