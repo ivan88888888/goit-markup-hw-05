@@ -104,6 +104,20 @@ header {
     margin-right: 50px;
 }
 
+.current::after {
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
+
+    width: 100%;
+    height: 4px;
+
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
 .header-item:last-child {
     margin-right: 0px;
 }
@@ -119,11 +133,14 @@ header {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    position: relative;
 }
 
 .header-link:hover,
 .header-link:focus {
     color: var(--accent-text-color);
+    transition: cubic-bezier();
 }
 
 .link.current {
@@ -376,7 +393,7 @@ display: flex;
     padding-bottom: 27px;
 
     position: relative;
-    top: -70px;
+    top:
 }
 
 
