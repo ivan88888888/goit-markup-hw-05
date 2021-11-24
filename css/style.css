@@ -391,6 +391,9 @@ display: flex;
 
 /* div */
 .work-conteiner-box {
+    position: absolute;
+    bottom: 0;
+
     margin: 0 auto;
 
     width: 100%;
@@ -399,8 +402,7 @@ display: flex;
     background: rgba(47, 48, 58, 0.8);
 
     
-    position: absolute;
-    bottom: 0;
+    
 
     display: flex;
     justify-content: center;
@@ -628,13 +630,16 @@ main {
     flex-wrap: wrap;
 }
 
+.overlay {
+
+}
+
 /* li (картинок, заголовків, абзаців */
 .main-second-item {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 
-    border: 1px solid #eeeeee;
     box-sizing: border-box;
 }
 
@@ -654,6 +659,7 @@ main {
 /* Картинки */
 .main-img {
     margin-bottom: 0px;
+    display: block;
 }
 
 /* h2 */
@@ -696,12 +702,64 @@ main {
     letter-spacing: 0.03em;
 }
 
-.main-div {
+.main-conteiner {
 padding-top: 20px;
 padding-bottom: 20px;
 padding-left: 24px;
 padding-right: 24px; 
+
+border-right: 1px solid #eeeeee;
+border-bottom: 1px solid #eeeeee;
+border-left: 1px solid #eeeeee;
 }
+
+/* силка */
+.main-second-link{
+}
+
+.main-relative {
+    position: relative;
+}
+
+/* оверлейн */
+
+.main-relative::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+
+    background: rgba(33, 150, 243, 0.9);
+}
+/* фон оверлейну */
+.main-absolute {
+    position: absolute;
+
+    top: 0px;
+    right: 0px;
+
+    width: 100%;
+    padding: 63px 24px;
+}
+/* текст оверлейну */
+.main-second-tex {  
+    margin: 0px;
+
+    color: #FFFFFF;
+
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+
+    width: 322px;
+    height: 168px;
+    bottom: 63px;
+    right: 24px;
+}
+
 
 
 
