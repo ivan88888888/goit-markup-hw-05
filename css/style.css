@@ -374,6 +374,10 @@ display: flex;
 .work-item {
 }
 
+.work-conteiner-position {
+    position: relative;
+}
+
 .work-link {
 }
 
@@ -394,12 +398,13 @@ display: flex;
 
     background: rgba(47, 48, 58, 0.8);
 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
     
-    position: relative;
-    bottom: 0px;
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* h3 */
@@ -409,7 +414,7 @@ display: flex;
     font-size: 14px;
     line-height: 1.144;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02998em;
     text-transform: uppercase;
 
     color: var(--white-text-color);
