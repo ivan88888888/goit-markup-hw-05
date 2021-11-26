@@ -136,12 +136,13 @@ header {
     padding-bottom: 32px;
 
     position: relative;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
 .header-link:focus {
     color: var(--accent-text-color);
-    transition: cubic-bezier();
 }
 
 .link.current {
@@ -174,6 +175,8 @@ padding-left: 0px;
 
     display: flex;
     align-items: center;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover,
@@ -268,7 +271,9 @@ padding-left: 0px;
     border-radius: 4px;
     margin-bottom: 0px;
     padding: 10px;
-    min-width: 200px; 
+    min-width: 200px;
+    
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -602,9 +607,10 @@ padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-
-
 
 .social-link:hover,
 .social-link:focus {
@@ -671,12 +677,16 @@ main {
     border-radius: 4px;
 
     padding: 6px 22px;
+
+    transition: 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-item:not(:last-child) {
     margin-right: 8px;
 }
-
 
 /* Ховер, фокус кнопок*/
 .main-button:hover,
@@ -875,6 +885,9 @@ border-left: 1px solid #eeeeee;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -887,7 +900,7 @@ border-left: 1px solid #eeeeee;
 
 
 
-/*----------------FOOTER-------------------*/
+/* Футер */
 .footer {
     background-color: var(--footer-bg-color);
 
@@ -946,6 +959,8 @@ padding-left: 0px;
 
     letter-spacing: 0.03em;
     display: inline-block;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-map:hover,
@@ -964,6 +979,8 @@ padding-left: 0px;
     letter-spacing: 0.03em;
 
     display: inline-block;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-mail:hover,
@@ -981,6 +998,8 @@ padding-left: 0px;
     letter-spacing: 0.03em;
 
     display: inline-block;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-tel:hover,
@@ -1032,6 +1051,15 @@ padding-left: 0px;
     margin-right: 10px;
 }
 
+.footer-svg {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+
+    fill: var(--white-text-color);
+}
+
 .footer-second-link {
     width: 44px;
     height: 44px;
@@ -1040,15 +1068,9 @@ padding-left: 0px;
     justify-content: center;
 
     border-radius: 50%;
-}
 
-.footer-svg {
-    width: 20px;
-    height: 20px;
-    margin: 0px;
-    padding: 0px;
-
-    fill: var(--white-text-color);
+    transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-second-link:hover,
