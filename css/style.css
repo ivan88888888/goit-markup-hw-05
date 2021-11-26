@@ -338,7 +338,6 @@ padding-left: 0px;
 }
 
 .close {
-
 }
 
 /*-------Секція 2. Переваги-------------*/
@@ -693,9 +692,6 @@ main {
     flex-wrap: wrap;
 }
 
-.overlay {
-
-}
 
 /* li (картинок, заголовків, абзаців */
 .main-second-item {
@@ -778,13 +774,20 @@ border-left: 1px solid #eeeeee;
 
 /* силка */
 .main-second-link{
+    width: 370px;
+}
+
+.main-second-link:hover .main-absolute {
+    opacty: 1;
+}
+
+.main-relative:hover::before {
+    opaity: 1;
 }
 
 .main-relative {
     position: relative;
 }
-
-/* оверлейн */
 
 .main-relative::before {
     position: absolute;
@@ -796,8 +799,15 @@ border-left: 1px solid #eeeeee;
     left: 0px;
 
     background: rgba(33, 150, 243, 0.9);
+    opaity: 0;
+    transform: translateY(100%);
 }
-/* фон оверлейну */
+
+.main-second-link:hover .main-relative::before {
+    transform: translateY(0%);
+}
+
+
 .main-absolute {
     position: absolute;
 
@@ -806,7 +816,10 @@ border-left: 1px solid #eeeeee;
 
     width: 100%;
     padding: 63px 24px;
+    opaity: 0;
 }
+
+
 /* текст оверлейну */
 .main-second-tex {  
     margin: 0px;
