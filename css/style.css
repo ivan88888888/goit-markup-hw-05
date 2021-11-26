@@ -778,15 +778,16 @@ border-left: 1px solid #eeeeee;
 }
 
 .main-second-link:hover .main-absolute {
-    opacty: 1;
+    opacity: 1;
 }
 
 .main-relative:hover::before {
-    opaity: 1;
+    opacity: 1;
 }
 
 .main-relative {
     position: relative;
+    overflow: hidden;
 }
 
 .main-relative::before {
@@ -799,12 +800,13 @@ border-left: 1px solid #eeeeee;
     left: 0px;
 
     background: rgba(33, 150, 243, 0.9);
-    opaity: 0;
-    transform: translateY(100%);
+    opacity: 0;
+    transform: translateY(101%);
+    transition: transform 250ms;
 }
 
 .main-second-link:hover .main-relative::before {
-    transform: translateY(0%);
+    transform: translateY(0);
 }
 
 
@@ -816,11 +818,11 @@ border-left: 1px solid #eeeeee;
 
     width: 100%;
     padding: 63px 24px;
-    opaity: 0;
+    opacity: 0;
 }
 
 
-/* текст оверлейну */
+/* текст */
 .main-second-tex {  
     margin: 0px;
 
