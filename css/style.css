@@ -786,8 +786,8 @@ border-left: 1px solid #eeeeee;
     overflow: hidden;
 }
 
-.main-relative:hover .main-absolute,
-.main-relative:focus .main-absolute {
+.main-second-link:hover .main-absolute,
+.main-second-link:focus .main-absolute {
     transform: translateY(0%);
 }
 
