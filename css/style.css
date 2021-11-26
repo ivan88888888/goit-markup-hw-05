@@ -340,7 +340,7 @@ padding-left: 0px;
 .close {
 }
 
-/*-------Секція 2. Переваги-------------*/
+/* Секція 2. Переваги */
 .benefits-section {
 background-color: var(--benefits-section-bg-color);
 padding-top: 94px;
@@ -412,7 +412,7 @@ padding-bottom: 0px;
 
 
 
-/*------------Чим ми займаємся-----------*/
+/* Чим ми займаємся */
 .work-title {
     color: var(--primary-text-color);
 
@@ -488,7 +488,7 @@ display: flex;
 
 
 
-/*-----------Секція 3. Наша команда-------*/
+/* Секція 3. Наша команда */
 .team-section {
     background-color: var(--team-section-bg-color);
 }
@@ -619,7 +619,9 @@ padding-bottom: 30px;
     padding: 0px;
 }
 
-/* PORTFOLIO */
+
+
+/* Портфоліо */
 
 main {
     background-color: var(--portfolio-main-bg-color);
@@ -691,7 +693,6 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 /* li (картинок, заголовків, абзаців */
 .main-second-item {
@@ -772,17 +773,32 @@ border-bottom: 1px solid #eeeeee;
 border-left: 1px solid #eeeeee;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Overlay */
+
 /* силка */
 .main-second-link{
     width: 370px;
 }
 
 .main-second-link:hover .main-absolute {
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 .main-relative:hover::before {
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 .main-relative {
@@ -800,7 +816,7 @@ border-left: 1px solid #eeeeee;
     left: 0px;
 
     background: rgba(33, 150, 243, 0.9);
-    opacity: 0;
+    /* opacity: 0; */
     transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -809,21 +825,19 @@ border-left: 1px solid #eeeeee;
     transform: translateY(0);
 }
 
-
 .main-absolute {
     position: absolute;
 
-    top: 0px;
-    right: 0px;
+    /* top: 0px;
+    right: 0px; */
 
     width: 100%;
     padding: 63px 24px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
-
 /* текст */
-.main-second-tex {  
+.main-second-tex { 
     margin: 0px;
 
     color: #FFFFFF;
@@ -837,6 +851,16 @@ border-left: 1px solid #eeeeee;
     bottom: 63px;
     right: 24px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
